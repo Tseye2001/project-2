@@ -85,7 +85,7 @@ class Calculator:
                 self.write_to_csv(result, f'1/({current_text})')
             except ZeroDivisionError:
                 self.entry.delete(0, tk.END)
-                self.entry.insert(tk.END, "Error: Division by zero")
+                self.entry.insert(tk.END, "Error: cant divide by zero")
             except ValueError:
                 self.entry.delete(0, tk.END)
                 self.entry.insert(tk.END, "Error: Invalid input")
@@ -103,7 +103,7 @@ class Calculator:
                 self.write_to_csv(result, f'{current_text}!')
             except ValueError:
                 self.entry.delete(0, tk.END)
-                self.entry.insert(tk.END, "Error: Factorial only accepts integer input")
+                self.entry.insert(tk.END, "Error: Factorials only accepts integers")
             except Exception:
                 self.entry.delete(0, tk.END)
                 self.entry.insert(tk.END, "Error")
