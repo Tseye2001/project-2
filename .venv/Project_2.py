@@ -5,12 +5,12 @@ import csv
 
 class Calculator:
     """
-    A simple calculator GUI application using Tkinter.
+    A  calculator GUI application using Tkinter.
     """
 
     def __init__(self, master: tk.Tk):
         """
-        Initialize the calculator GUI.
+        starts the calculator GUI.
 
         Args:
             master (tk.Tk): The Tkinter root window.
